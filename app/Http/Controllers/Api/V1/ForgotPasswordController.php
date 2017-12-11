@@ -2,15 +2,18 @@
 
 namespace App\Http\Controllers\Api\V1;
 
-use App\Models\User\User;
-use App\Notifications\UserNeedsPasswordReset;
-use App\Repositories\UserRepository;
-use Illuminate\Http\Request;
 use Validator;
+use App\Models\User\User;
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\Repositories\UserRepository;
+use Illuminate\Support\Facades\Password;
+use App\Notifications\UserNeedsPasswordReset;
 
 class ForgotPasswordController extends APIController
 {
-    /**
+
+   /**
      * __construct.
      *
      * @param $repository
@@ -23,8 +26,7 @@ class ForgotPasswordController extends APIController
     /**
      * Send a reset link to the given user.
      *
-     * @param \Illuminate\Http\Request $request
-     *
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\JsonResponse
      */
     public function sendResetLinkEmail(Request $request)
@@ -39,7 +41,7 @@ class ForgotPasswordController extends APIController
 
         $user = $this->repository->getUserByEmail($request);
 
-        if (!$user) {
+        if(!$user) {
             return $this->respondNotFound(trans('api.messages.forgot_password.validation.email_not_found'));
         }
 

@@ -1,6 +1,6 @@
 
 ## Laravel API Boilerplate for Laravel 5.5
-[![License](https://img.shields.io/badge/License-MIT-red.svg)](https://github.com/viitoradmin/laravel-api-boilerplate/blob/master/LICENSE)
+[![License](https://img.shields.io/badge/License-MIT-red.svg)](https://github.com/viitorcloudtechnologies/laravel-api-boilerplate/blob/master/LICENSE)
 [![StyleCI](https://styleci.io/repos/30171828/shield?style=plastic)](https://styleci.io/repos/105789824/shield?style=plastic)
 
 # Getting started
@@ -11,7 +11,7 @@ Laravel API Boilerplate is a "starter kit" you can use to build your first API i
 
 ## Installation
 
-Please check the official laravel installation guide for server requirements before you start. [Official Documentation](https://laravel.com/docs/5.4/installation#installation)
+Please check the official laravel installation guide for server requirements before you start. [Official Documentation](https://laravel.com/docs/5.5/installation#installation)
 
 
 Clone the repository
@@ -50,8 +50,8 @@ You can now access the server at http://localhost:8000
 
 **TL;DR command list**
 
-    git clone https://github.com/viitoradmin/laravel-api-boilerplate.git
-    cd laravel-api-boilerplate-jwt
+    git clone https://github.com/viitorcloudtechnologies/laravel-api-boilerplate.git
+    cd laravel-api-boilerplate
     composer install
     cp .env.example .env
     php artisan key:generate
@@ -84,6 +84,6 @@ Feel free to create any pull requests for the project. For propsing any new chan
 
 ## License
 
-[MIT LICENSE](https://github.com/viitoradmin/laravel-vue-spa-boilerplate/blob/master/LICENSE)
+[MIT LICENSE](https://github.com/viitorcloudtechnologies/laravel-api-boilerplate/blob/master/LICENSE)
 
 
